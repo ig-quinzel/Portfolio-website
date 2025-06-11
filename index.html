@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/4f1f6ae666.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">My Technical Area</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Data Analyst</p>
+            <h1>Hey, myself <span>Nandana</span></h1>
+        </div>
+    </div>
+   </div>  
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="aboutcol1">
+            <img src="about.JPG" >
+            </div>
+            <div class="aboutcol2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Hi! I'm Nandana K, a passionate and curious Data Science student who loves building creative and meaningful tech solutions. I enjoy exploring the world of data science, artificial intelligence, and web development, constantly learning new technologies and applying them in real-world projects.</p> 
+                <p>Established the Game Development Club at college, actively served in multiple student organizations, and played a key role in organizing both technical and cultural fests. Whether it's analyzing complex datasets, designing intuitive user experiences, or collaborating in hackathons, I’m always excited to challenge myself and grow.</p>
+                <p>Outside of coding, I enjoy gaming, dancing, travelling and being actively involved in college activities. My goal is to keep learning, stay inspired, and build impactful projects that make a difference.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Machine Learning</span><br>Supervised & unsupervised learning, model training and evaluation, regression/classification algorithms</li>
+                    <li><span>Programming Languages</span><br>Python, R, Java, SQL, C</li>
+                    <li><span>Web Development</span><br>HTML, CSS, JavaScript, Flask, Django</li>
+                    <li><span>Data Science & Analytics</span><br>Data analysis, visualization, and insights using Python and Power BI.</li>
+                    <li><span>Soft Skills</span><br>Problem Solving, Critical Thinking, Communication, Leadership, Collaboration</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>Internship at PaceLab - June 2025 (Ongoing)</span><br>Assisted in developing and optimizing AI models, performed data preprocessing, and collaborated with teams to implement AI-driven solutions.</li>
+                    <li><span>Micro Internship at TATA Global Internships - March 2025</span><br>Completed a micro internship focused on Data Visualization: Empowering Business with Effective Insights, gaining hands-on experience in extracting, analyzing, and visualizing business data.</li>
+                </ul>
+            </div> 
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Mar Athanasius College of Engineering, Kothamangalam   -   October 2022 - June 2026</span><br>B.Tech in Computer Science and Engineering with Specialization in Data Science <br>CGPA: 8.9 (up to Semester 5) </li>
+                    <li><span>G.H.S.S Pallikkunnu, Kannur   -   June 2020 – March 2022</span><br>Higher Secondary Education<br>96.67% in State Board Exam</li>
+                    <li><span>Chinmaya Vidhyalaya Kannur, Kerala   -   March 2020</span><br>High School Education<br>94.8% in CBSE Board Exam </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">My Technical Area</h1>
+        <div class="worklist">
+            <div class="work">
+                <a href="http://leetcode.com/profile">
+                <img src="LeetCode_logo.png" class="logo2">
+                <figcaption>leetcode</figcaption>
+                </a>
+            </div>
+            <div class="work">
+                <a href="https://www.hackerrank.com/profile/nandanak267">
+                <img src="hackerrank_logo.png" class="logo3">
+                <figcaption>  1798 hackos</figcaption>
+                </a>
+            </div>
+            <div class="work">
+                <a href="https://github.com/ig-quinzel">
+                <img src="Github-Logo-Transparent-Background-PNG.png" class="logo4">
+                <figcaption>Github</figcaption>
+                </a>
+            </div>
+            <div class="work">
+                <a href="nandana-resume (1).pdf">
+                <img src="resume.png" class="logo3">
+                <figcaption>Resume</figcaption>
+                </a>
+            </div>
+        </div>
+
+    </div>
+   </div>
+
+   <div id="projects">
+    <div class="container">
+        <h1 class="subtitle">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+            <h2>Crime data cluster analysis</h2>
+            <p>K-Means clustering on crime data across different regions in Maharashtra to identify high-crime zones and patterns. Visualized clusters using matplotlib.</p>
+            <a href="https://github.com/ig-quinzel/crime-data-clustering">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-list"></i>
+            <h2>To-do list with folders</h2>
+            <p>A productivity app that lets users create folders, add tasks, set due dates, and organize to-dos efficiently with a clean UI.</p>
+            <a href="https://github.com/ig-quinzel/my-todo-app">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-train"></i>
+            <h2>MetroFlow</h2>
+            <p>Metro passenger flow analysis tool that predicts origin-destination patterns using fare data, aiding in transport planning and crowd management.</p>
+            <a href="https://github.com/ig-quinzel/MetroFlow-Passenger-s-Origin-Destination-Distribution-Prediction-Over-Metro-Networks">Learn More</a>
+            </div>
+        </div>
+    </div>
+   </div>
+   <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p>nandanak267@gmail.com</p>
+                <br>
+                <p>+91 7025584172</p>
+                <br>
+                <div class="socialmedia">
+                    <a href="https://www.linkedin.com/in/nandana-k-3193a8265/">
+                        <img src="link.png" class="logo5">
+                    </a>
+                    <a href="https://www.instagram.com/_.nandanaaa.___/">
+                        <img src="insta.png"  class="logo5">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    } 
+   </script>
+</body>
+</html>
