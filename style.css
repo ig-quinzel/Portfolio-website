@@ -10,6 +10,8 @@ html{
 body{
     background: #000000;
     color :rgb(255, 255, 255);
+    font-size: 20px;         /* ✅ New */
+    line-height: 1.7;  
 }
 #header {
     width: 100%;
@@ -81,6 +83,7 @@ nav ul li a:hover::after {
 #about{
   padding: 80px 0; 
   color: #ababab;
+  
 
 }
 .row{
@@ -108,6 +111,7 @@ nav ul li a:hover::after {
   padding: 80px 5%;
   background-color: #111;
   color: #fff;
+  
 }
 
 .subtitle {
@@ -118,7 +122,7 @@ nav ul li a:hover::after {
 }
 
 #about p {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.8;
   margin-bottom: 15px;
 }
@@ -151,11 +155,12 @@ nav ul li a:hover::after {
   margin: 10px 0;
 }
 .tab-contents ul li span{
-  font-size: 14px;
-  color: #b547; ;
+  font-size: 22px;
+  color: #b547;
 }
 .tab-contents{
   display: none;
+  font-size: 22px;
 }
 .tab-contents.active-tab{
   display: block;
@@ -163,16 +168,25 @@ nav ul li a:hover::after {
 #projects{
   padding: 30px 0;
 }
+.project {
+  background: #262626;
+  padding: 40px;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
 .projects-list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   margin-top: 50px;
 }
 .projects-list div {
   background: #262626;
   padding: 40px;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 300;
   border-radius: 10px; 
   transition: background 0.5s, transform 0.5s;
@@ -183,13 +197,13 @@ nav ul li a:hover::after {
 }
 .projects-list div h2{
   font-size: 30px;
-  font-weight: 500;
   margin-bottom: 15px;
 }
 .projects-list div a{
   text-decoration: none;
   color: #fff;
-  font-size: 12px;
+  font-size: 18px;
+  text-decoration: underline;
   margin-top: 20px;
   display: inline-block;
 
@@ -229,6 +243,92 @@ nav ul li a:hover::after {
 .worklist{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.work:hover {
+  transform: translateY(-5px);
+  background-color: #ff004f;
+  box-shadow: 0 8px 20px rgba(255, 0, 79, 0.4);
+}
+
+.work h3 {
+  font-size: 25px;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+.work p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.work img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border-radius: 50%;
+  background-color: #333;
+  padding: 10px;
+}
+#certifications {
+  padding: 60px 0;
+  background-color: #111;
+}
+
+.certification-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.cert {
+  background: #262626;
+  padding: 30px;
+  border-radius: 12px;
+  transition: background 0.4s, transform 0.4s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.cert:hover {
+  background: #ff004f;
+  transform: translateY(-10px);
+}
+
+.cert i {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #ff004f;
+}
+
+.cert h3 {
+  font-size: 25px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.project-img {
+  width: 100%;
+  height: 180px;  /* adjust as needed */
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.more-projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 40px;
   margin-top: 50px;
 }

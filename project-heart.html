@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Smart Heart Disease Risk Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #111;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      padding-bottom: 60px;
+    }
+
+    .project-header {
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+
+    .project-header h1 {
+      font-size: 4.5rem;
+      color: #ff004f;
+    }
+
+    .project-image {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 20px 0;
+      box-shadow: 0 5px 25px rgba(255, 0, 79, 0.2);
+    }
+
+    .lead.mt-3 {
+      font-size: 2rem;
+      color: #aaa;
+    }
+
+    .content-section {
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .content-section h2 {
+      color: #ff004f;
+      margin-top: 40px;
+      font-size: 40px;
+    }
+
+    .content-section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .content-section ul li::before {
+      content: "🔹 ";
+      color: #00ff99;
+    }
+
+    .mt-3 {
+      font-size: 23px;
+    }
+.img2 {
+    max-width: 100%;
+    width: 150%;
+    border-radius: 12px;
+    margin: 0 0;
+    margin-left: -100px;
+}
+.img3 {
+    width: 80%;
+    border-radius: 12px;
+    margin: 0 0;
+    margin-left: 0px;
+}
+    a.btn-primary {
+      background-color: #ff004f;
+      border: none;
+    }
+
+    a.btn-outline-light:hover {
+      background-color: #ff004f;
+      border-color: #ff004f;
+    }
+    .img4{
+        margin-left: 30px;
+        border-radius: 20px;
+    }
+tr{
+    font-size: 20px;
+}
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="project-header">
+    <h1>Smart Heart Disease Risk Predictor</h1>
+    <p class="lead mt-3">
+      A Flask app that predicts the likelihood of heart disease using a Decision Tree classifier and real medical data.
+    </p>
+  </div>
+
+  <div class="content-section">
+    <img src="24644947_Tiny doctors studying huge human heart.jpg" alt="Smart Heart Disease Risk Predictor" class="project-image img-fluid" />
+
+    <h2>💡 Features</h2>
+    <ul class="mt-3">
+      <li>Step-by-step input form: Personal ➜ Medical</li>
+      <li>Trained Decision Tree classifier (sklearn)</li>
+      <li>Dark-themed, animated UI</li>
+      <li>Full summary of user inputs and prediction</li>
+      <li>Option to download PDF report</li>
+      <li>Confusion matrix visualization during model training</li>
+    </ul>
+
+    <h2 class="mt-5">🛠️ Tech Stack</h2>
+    <ul class="mt-3">
+      <li>Python, Flask, Sklearn</li>
+      <li>Decision Tree Classifier</li>
+      <li>Jinja2 Templates, HTML/CSS</li>
+      <li>FPDF2 (for PDF export)</li>
+    </ul>
+
+    <h2 class="mt-5">📈 Results and Evaluation</h2>
+    <p class="mt-3">User inputs were processed through the model, and the following results were obtained:</p>
+<img src="Screenshot 2025-06-21 225709.png" alt="">
+<br>
+<br>
+<img src="Screenshot 2025-06-21 225838.png" alt="img2" class="img2">
+<br>
+<br>
+<img src="Screenshot 2025-06-21 225819.png" alt="img3" class="img3">
+     <p class="mt-3">Achieved high classification accuracy on test data, with balanced precision and recall. Confusion matrix insights enabled deeper model evaluation.</p>
+      <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+      <tr style="background-color: #222; color: #ff004f;">
+        <th style="padding: 12px; border: 1px solid #333;">Class</th>
+        <th style="padding: 12px; border: 1px solid #333;">Precision</th>
+        <th style="padding: 12px; border: 1px solid #333;">Recall</th>
+        <th style="padding: 12px; border: 1px solid #333;">F1-Score</th>
+        <th style="padding: 12px; border: 1px solid #333;">Support</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: #181818;">
+        <td style="padding: 12px; border: 1px solid #333;">No Disease (0)</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.80</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.75</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.77</td>
+        <td style="padding: 12px; border: 1px solid #333;">32</td>
+      </tr>
+      <tr style="background-color: #1e1e1e;">
+        <td style="padding: 12px; border: 1px solid #333;">Disease (1)</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.73</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.79</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.76</td>
+        <td style="padding: 12px; border: 1px solid #333;">28</td>
+      </tr>
+      <tr style="background-color: #2a2a2a;">
+        <td style="padding: 12px; border: 1px solid #333;"><strong>Accuracy</strong></td>
+        <td colspan="4" style="padding: 12px; border: 1px solid #333;">0.77</td>
+      </tr>
+      <tr style="background-color: #2a2a2a;">
+        <td style="padding: 12px; border: 1px solid #333;"><strong>Macro Avg</strong></td>
+        <td style="padding: 12px; border: 1px solid #333;">0.77</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.77</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.77</td>
+        <td style="padding: 12px; border: 1px solid #333;">60</td>
+      </tr>
+      <tr style="background-color: #2a2a2a;">
+        <td style="padding: 12px; border: 1px solid #333;"><strong>Weighted Avg</strong></td>
+        <td style="padding: 12px; border: 1px solid #333;">0.77</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.77</td>
+        <td style="padding: 12px; border: 1px solid #333;">0.77</td>
+        <td style="padding: 12px; border: 1px solid #333;">60</td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <br>
+  
+  <img src="Figure_1.png" alt="" class="img4">
+   <div class="mt-5">
+      <a href="https://github.com/ig-quinzel/Smart-Heart-Disease-Risk-Predictor" target="_blank" class="btn btn-primary me-3">View on GitHub</a>
+      <a href="index.html" class="btn btn-outline-light">← Back to Portfolio</a>
+    </div>
+  </div>
+
+  <footer class="mt-5">
+    <p>&copy; 2025 Nandana K</p>
+  </footer>
+
+</body>
+</html>
