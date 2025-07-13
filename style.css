@@ -4,6 +4,12 @@
     font-family: 'Poppins',sans-serif;
     box-sizing:border-box;
 }
+* {
+  caret-color: transparent;
+}
+input, textarea {
+  caret-color: auto; /* allow cursor in actual form fields */
+}
 html{
   scroll-behavior: smooth;
 }
@@ -32,14 +38,15 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 0px;
+  margin-top: 0%;
 }
 
-/* Make logo small and align top-left */
 .logo {
-  width: 180px; /* adjust as needed */
+  width: 120px;          /* adjust as needed */
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
 /* Style the navigation links */
@@ -130,11 +137,15 @@ nav ul li a:hover::after {
   display: flex;
   margin: 20px 0 40px;
 }
-.tab-links{
+.tab-links {
   margin-right: 50px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 500;
+  background: none;        /* removes any button background */
+  border: none;            /* removes any border */
+  padding: 0;              /* removes spacing that looks like button */
+  color: white;
   position: relative;
 }
 .tab-links::after{
@@ -148,7 +159,7 @@ nav ul li a:hover::after {
   transition: 0.5s;
 }
 .tab-links.active-link::after{
-  width: 50%;
+  width: 100%;
 }
 .tab-contents ul li{
   list-style: none;
