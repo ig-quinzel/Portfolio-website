@@ -340,7 +340,6 @@ nav ul li a:hover::after {
   grid-gap: 40px;
   margin-top: 50px;
 }
-/* 🔻 Tablet View (<= 1024px) */
 @media (max-width: 1024px) {
   .header-text h1 {
     font-size: 45px;
@@ -364,7 +363,6 @@ nav ul li a:hover::after {
   }
 }
 
-/* 🔻 Mobile View (<= 768px) */
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -437,7 +435,6 @@ nav ul li a:hover::after {
   }
 }
 
-/* 🔻 Small Mobile View (<= 480px) */
 @media (max-width: 480px) {
   .header-text h1 {
     font-size: 28px;
